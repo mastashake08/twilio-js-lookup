@@ -1,0 +1,26 @@
+{
+  "name": "twilio-js-lookup",
+  "version": "1.0.0",
+  "description": "Do phone lookups based on numbers",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mastashake08/twilio-js-lookup.git"
+  },
+  "keywords": [
+    "twilio"
+  ],
+  "author": "Jyrone Parker",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mastashake08/twilio-js-lookup/issues"
+  },
+  "homepage": "https://github.com/mastashake08/twilio-js-lookup#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "twilio": "^5.0.4"
+  }
+}
