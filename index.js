@@ -6,8 +6,17 @@ env.config();
 const accountSid = process.env.TWILIO_ACCOUNT_SID;
 const authToken = process.env.TWILIO_AUTH_TOKEN;
 const client = require('twilio')(accountSid, authToken);
-
-client.lookups.v2.phoneNumbers('+18594024863')
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  });
+  
+  readline.question('Enter a valid phone number... \n', number => {
+    client.lookups.v2.phoneNumbers(number)
                  .fetch({fields: 'caller_name'})
                  .then(phone_number => console.log(phone_number.callerName));
+    readline.close();
+  });
+  
+
 
